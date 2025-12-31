@@ -1,0 +1,25 @@
+.image{
+    width: 180px;
+    border-radius: 10px;
+    
+    background-color: rgb(244, 240, 237);
+
+     
+}
+.productcard{
+    background-color: rgb(10, 86, 86);
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    
+    text-align: center;
+    
+}
+.satyam{
+    display: flex;
+    gap: 50px;
+    margin: 20px;
+        /* flex-wrap: wrap; */
+    background-image: linear-gradient(orange,white,rgb(10, 206, 53));
+}
