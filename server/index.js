@@ -5,7 +5,13 @@ const proSchema=require('./proSchema')
 connectdb();
 
 const app=express();
-app.use(core())
+
+
+app.use(core({
+
+origin:"https://krishisetushreya.netlify.app/"
+})); 
+
 app.use(express.json())
 
 app.get('/product',(req,res)=>{
