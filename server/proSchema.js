@@ -7,4 +7,5 @@ const proSchema=mongoose.Schema({
     productTitle:String,
     productDetails:String
 });
-module.exports=mongoose.model("Crops",proSchema);
+
+module.exports=mongoose.model("Crops",proSchema,"Crops");

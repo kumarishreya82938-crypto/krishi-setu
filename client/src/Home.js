@@ -11,11 +11,9 @@ function Home() {
 
    async function getData(){
 
-      const response=await axios.get("https://krishisetu-q08g.onrender.com/products")
-      setData(response);
+      const response=await axios.get("http://localhost:5000/products")
+      setData(response.data);
       console.log(response,data);
-
-
     }
 
     useEffect(()=>{
@@ -66,7 +64,6 @@ function Home() {
             <img src={product.productImage} className='image'/>
             <h2>{product.productTitle}</h2>
             <h3>{product.productPrice}</h3>
-
 
           </div>
 

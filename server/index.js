@@ -1,20 +1,18 @@
 const express=require('express')
 const connectdb=require('./DB');
 const proSchema=require('./proSchema')
+const cors=require('cors')
 
 connectdb();
 
 const app=express();
 
 
-app.use(core({
-
-origin:"https://krishisetushreya.netlify.app/"
-})); 
+app.use(cors()); 
 
 app.use(express.json())
 
-app.get('/product',(req,res)=>{
+app.get('/products',(req,res)=>{
 proSchema.find({})
 .then(cat=>{ 
     res.json(cat)
